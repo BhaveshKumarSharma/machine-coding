@@ -32,7 +32,7 @@ jobs:
       - name: Deploy to Vercel
         run: |
           npm install -g vercel
-          vercel --token=${{ secrets.VERCEL_TOKEN }} --scope=${{ secrets.VERCEL_ORG_ID }} --prod --confirm
+          vercel --token=${{ secrets.VERCEL_TOKEN }} --prod --confirm
         env:
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
